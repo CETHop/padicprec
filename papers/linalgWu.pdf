@@ -1,0 +1,116 @@
+\documentclass{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Les packages, et leur réglages
+\usepackage{vmargin,epsfig}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[tbtags]{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{tikz}
+\usetikzlibrary{matrix,patterns,arrows} % , decorations.pathmorphing,positioning,calc}
+\usepackage{times}
+\usepackage{microtype}
+\usepackage[algoruled,vlined,english,onelanguage,linesnumbered]{algorithm2e}
+%\usepackage{thmtools,thm-restate}
+\usepackage{enumerate}
+
+% Les définitions de macros
+%\input{commandes}
+\newcommand{\pair}{\mathscr{P}_e}
+\newcommand{\quorem}{\mathrm{quorem}}
+\newcommand{\rem}{\mod}
+\newcommand{\slopes}{\mathscr{S}}
+\newcommand{\NP}{\mathrm{NP}_{\nu}}
+\newcommand{\FracSnu}{\mathscr{F}}
+\newcommand{\Ap}{\mathscr{P}}
+\newcommand{\Apr}{\mathscr{A}}
+\newcommand{\Rpi}{\varpi}
+\newcommand{\Ri}{\mathfrak{R}}
+\newcommand{\Cond}{\mathrm{Cond}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\mS}{S}
+\newcommand{\im}{\mathrm{Im}}
+\newcommand{\Tail}{\mathscr{T}}
+\newcommand{\mSloc}{S_{\nu,loc}}
+\newcommand{\mSnu}{\mS_{\nu}}
+\newcommand{\mSnup}{\mS_{\nu'}}
+\newcommand{\mSpnu}{\mS_{\nu,\pi}}
+\newcommand{\mSunu}{\mS_{\nu,u}}
+\newcommand{\mSunup}{\mS_{\nu',u}}
+\newcommand{\eSnu}{\mS'_{\nu}}
+\newcommand{\eSnup}{\mS'_{\nu'}}
+\newcommand{\eSpnu}{\mS'_{\nu,\pi}}
+\newcommand{\eSunu}{\mS'_{\nu,u}}
+\newcommand{\mE}{\mathscr{E}}
+\newcommand{\mO}{\mathscr{O}}
+\newcommand{\mSp}{\mS_\pi}
+\newcommand{\mSu}{\mS_u}
+\newcommand{\Frac}{\mathrm{Frac}}
+\renewcommand{\ker}{\mathrm{ker}\,}
+\newcommand{\coker}{\mathrm{coker}\,}
+\newcommand{\M}{\mathscr{M}}
+\newcommand{\Nc}{\mathscr{N}}
+\newcommand{\Rc}{\mathscr{R}}
+\newcommand{\sO}{\tilde{O}}
+\newcommand{\degW}{\text{\rm deg}{}_{\text{\rm W}}}
+\newcommand{\qis}{\mathrm{qis}}
+\newcommand{\Max}{\mathrm{Max}}
+\newcommand{\Free}{\mathrm{Free}}
+\newcommand{\MFree}{{\mathrm{Free}_0}}
+\newcommand{\free}{\mathrm{max}}
+\newcommand{\uFree}{\underline \Free}
+\newcommand{\uMax}{\underline \Max}
+
+\newcommand{\Mod}{\mathrm{Mod}}
+\newcommand{\uMod}{\underline \Mod}
+\newcommand{\uModtf}{\underline \Mod^{\mathrm{tf}}}
+
+\newcommand{\sat}{\mathrm{sat}}
+\newcommand{\Hi}{\mathrm{Hi}}
+\newcommand{\Lo}{\mathrm{Lo}}
+\newcommand{\minplus}{\min\nolimits^+}
+\newcommand{\la}{\leftarrow}
+\newcommand{\repr}{\mathrm{repr}}
+
+\newcommand\proche[2]{{\{ #2 \}_#1}}
+\newcommand\procheplus[2]{{\{ #2 \}^+_#1}}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+%\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{question}[theorem]{Question}
+%\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Linear Algebra over $\Z_p[[u]]$ and related rings}
+\author{Xavier Caruso,
+%\inst{1}
+David Lubicz
+%\inst{2}
+}
+%\institute{
+%\footnotesize
+%IRMAR, Universt\'e de Rennes 1,\\
+%Campus de Beaulieu,
+%F-35042 Rennes \\
+%\and
+%DGA-MI,\\
+%BP 7419,
+%F-35174 Bruz\\
+%}
+
+\input{linalwu.tex}
+\end{document}
